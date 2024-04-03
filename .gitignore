@@ -1,0 +1,44 @@
+# Archivos temporales
+*.swp
+*.swo
+*~
+*.log
+
+# Archivos compilados
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Directorios generados por IDEs
+.idea/
+.vscode/
+
+# Dependencias y archivos generados por paquetes de gestión de dependencias
+node_modules/
+package-lock.json
+yarn.lock
+Gemfile.lock
+
+# Archivos de construcción y carpetas de salida
+build/
+dist/
+out/
+env/
+
+# Archivos de configuración locales
+.env
+.env.local
+
+# Archivos de caché y registros
+.cache/
+__pycache__/
+logs/
+
+# Archivos específicos de sistemas operativos
+.DS_Store
+Thumbs.db
+
+# archivos ignore proyecto
+blogdj/applications/blog/migrations/*
