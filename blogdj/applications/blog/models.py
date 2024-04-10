@@ -105,3 +105,16 @@ class Blog(models.Model):
         
     def __str__(self):
         return self.title
+
+
+class Suscriptions(models.Model):
+
+    blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
+    email = models.EmailField('Correo', max_length=254)
+    
+    class Meta:
+        verbose_name = 'Suscripcion'
+        verbose_name_plural = "Suscripciones"
+        
+    def __str__(self):
+        return self.email
